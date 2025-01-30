@@ -53,19 +53,31 @@
       </div>
     </header> -->
 
-  <header>
-    <a href="#" class="brand">TripSpot</a>
-    <div class="menu-btn"></div>
-    <div class="navigation">
-      <div class="navigation-items">
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="services.html">Services</a>
-        <a href="review.html">Reviews</a>
-        <a href="#contact">Contact</a>
+    <header>
+      <a href="#" class="brand">TripSpot</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="services.html">Services</a>
+          <a href="review.html">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <!-- Account Dropdown Section -->
+        <div class="account-dropdown">
+          <img src="assets/img/pngtree-user-icon-image_1187018-removebg-preview.jpg" 
+               alt="Account Icon" class="account-icon" id="account-icon">
+          <div class="dropdown-menu hidden" id="dropdown-menu">
+            <a href="login.html" class="dropdown-item">Login</a>
+            <a href="bookings.html" class="dropdown-item">Bookings</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <script src="script.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 
   <section class="home" id="home">
     <video class="video-slide active" src="assets/img/1.mp4" autoplay muted loop></video>

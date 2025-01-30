@@ -146,3 +146,19 @@ sr.reveal('.banner__card', {
 });
 
 console.log('ScrollReveal animations for Client and Banner sections initialized.');
+
+// Get the account icon and dropdown menu elements
+const accountIcon = document.getElementById("account-icon");
+const dropdownMenu = document.getElementById("dropdown-menu");
+
+// Toggle the visibility of the dropdown menu on icon click
+accountIcon.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("hidden");
+});
+
+// Close the dropdown if clicked outside
+document.addEventListener("click", (event) => {
+  if (!accountIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+    dropdownMenu.classList.add("hidden");
+  }
+});
