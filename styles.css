@@ -1160,3 +1160,8 @@ footer {
   color: #000;
 }
 
+.logo {
+  height: 40px; /* Adjust size as needed */
+  width: auto;
+  display: block;
+}
