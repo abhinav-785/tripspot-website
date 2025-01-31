@@ -128,12 +128,18 @@ function updateUI(isLoggedIn) {
 
 // Logout function
 function logout() {
+  // Sign out from Google
+  google.accounts.id.disableAutoSelect();
+
+  // Remove user data from localStorage
   localStorage.removeItem("userLoggedIn");
   localStorage.removeItem("userName");
   localStorage.removeItem("userEmail");
   localStorage.removeItem("userImage");
 
+  // Refresh UI
   updateUI(false);
+
   alert("You have been logged out.");
 }
 
